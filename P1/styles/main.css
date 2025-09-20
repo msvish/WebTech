@@ -205,7 +205,7 @@ section h3 {
 .class-list li {
   margin-bottom: 0.5rem;
   padding: 0.3rem 0;
-  border-left: 3px solid #00274c;
+  border-left: 3px solid #f0c413;
   padding-left: 1rem;
   background: #f8f9ff;
 }
@@ -215,7 +215,7 @@ section h3 {
   padding: 0.5rem;
   background: #f8f9ff;
   border-radius: 5px;
-  border-left: 3px solid #00274c;
+  border-left: 3px solid #f0c413;
 }
 
 /* Links */
