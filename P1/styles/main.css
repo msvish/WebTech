@@ -65,7 +65,7 @@ header h1 {
 
 .main-nav a,
 .nav-tier-1 > li > a {
-  color: white;
+  color: #00274c;
   text-decoration: none;
   padding: 0.5rem 1rem;
   border-radius: 20px;
@@ -132,7 +132,7 @@ header h1 {
 }
 
 .nav-tier-2 a:hover {
-  background: #f8f9ff;
+  background: rgba(255, 255, 255, 0.2);
   color: #00274c;
   transform: translateX(5px);
 }
@@ -233,7 +233,7 @@ a:hover {
 .course-link {
   font-weight: bold;
   background: #f0c413;
-  color: white;
+  color: #00274c;
   padding: 0.5rem 1rem;
   border-radius: 25px;
   display: inline-block;

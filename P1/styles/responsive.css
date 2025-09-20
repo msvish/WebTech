@@ -98,9 +98,9 @@
     position: fixed;
     top: 0;
     left: -50%;
-    width: 50%;
+    width: 50%; /* width of side nav */
     height: 100vh;
-    backdrop-filter: blur(10px);
+    background: #00274c;
     transition: left 0.3s ease;
     z-index: 1000;
     display: flex;
@@ -124,23 +124,28 @@
     width: 100%;
   }
 
+  .nav-tier-2 {
+    position: absolute;
+    top: 0;
+    left: 0; /* push to the right of parent */
+    width: 220px;
+    background: #001a33;
+    display: none;
+    flex-direction: column;
+    padding-top: 0;
+    z-index: 1001;
+    border-left: 2px solid #f0c413;
+  }
+
   .main-nav li {
-    display: block;
-    margin: 1rem 0;
-    text-align: center;
     position: relative;
-    width: 100%;
   }
 
   .main-nav a {
-    font-size: 1.5rem;
-    padding: 1rem 2rem;
-    display: block;
-    width: 100%;
-    text-align: center;
-    border-radius: 10px;
-    transition: all 0.3s ease;
     color: white;
+    padding: 1rem 1.5rem;
+    display: block;
+    text-decoration: none;
   }
 
   .main-nav a:hover {
@@ -177,15 +182,13 @@
     border-radius: 10px;
     overflow: visible;
     min-width: 200px;
+    min-height: fit-content;
     z-index: 1001;
     transition: all 0.3s ease;
   }
 
   .dropdown.active .nav-tier-2 {
-    display: block;
-    opacity: 1;
-    visibility: visible;
-    transform: translateX(0);
+    display: flex;
   }
 
   .nav-tier-2 li {
@@ -195,27 +198,23 @@
   }
 
   .nav-tier-2 a {
-    color: #333;
-    padding: 0.8rem 1.5rem;
-    margin: 0 0.5rem;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    white-space: nowrap;
-    display: block;
-    width: auto;
-    transition: all 0.3s ease;
+    padding: 0.8rem 1rem;
+    color: #00274c;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .nav-tier-2 a:last-child {
+    border-bottom: none;
   }
 
   .nav-tier-2 a:hover {
-    background: #f8f9ff;
-    color: #00274c;
-    transform: translateX(5px);
+    background: rgba(255, 255, 255, 0.2);
   }
 
   /* Ensure dropdowns don't go off screen on mobile */
   .nav-tier-1 > li:last-child .nav-tier-2,
   .nav-tier-1 > li:nth-last-child(2) .nav-tier-2 {
-    left: auto;
+    left: 0;
     right: 100%;
     margin-left: 0;
     margin-right: 0.5rem;
