@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIS 525 - Web Technology Course Page</title>
+    <link rel="icon" type="image/png" href="images/dearborn.png">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+</head>
+<body>
+    <header>
+        <h1>CIS 525 - Web Technology</h1>
+        
+        <!-- Hamburger menu button -->
+        <button class="hamburger" id="hamburger">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+        
+        <!-- Two-tier navigation menu -->
+        <nav class="main-nav" id="main-nav">
+            <!-- First tier navigation -->
+            <ul class="nav-tier-1">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cis525.html">CIS 525</a></li>
+                <li class="dropdown">
+                    <a href="#projects">Projects</a>
+                    <!-- Second tier navigation -->
+                    <ul class="nav-tier-2">
+                        <li><a href="#projects">All Projects</a></li>
+                        <li><a href="#project1">Project 1</a></li>
+                        <li><a href="#project2">Project 2</a></li>
+                        <li><a href="#project3">Project 3</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#assignments">Assignments</a>
+                    <!-- Second tier navigation -->
+                    <ul class="nav-tier-2">
+                        <li><a href="#assignments">All Assignments</a></li>
+                        <li><a href="#assignment1">Assignment 1</a></li>
+                        <li><a href="#assignment2">Assignment 2</a></li>
+                        <li><a href="#assignment3">Assignment 3</a></li>
+                        <li><a href="#assignment4">Assignment 4</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="course-intro">
+            <h2>Welcome to my CIS 525 Course Page</h2>
+            <p>This page showcases my completed projects and assignments for CIS 525 - Web Technology at UMD. Throughout this course, I've been learning about HTML, CSS, JavaScript, and modern web development practices.</p>
+        </div>
+
+        <section id="projects" class="projects-section">
+            <h2>Completed Projects</h2>
+            
+            <div class="project-grid">
+                <div id="project1" class="project-card">
+                    <h3>Project 1: Personal Website</h3>
+                    <p>This is the current project - a personal home page and course page built with HTML and CSS, featuring responsive design and modern web practices.</p>
+                    <ul class="project-features">
+                        <li>2-column responsive layout</li>
+                        <li>Two-tier navigation menu</li>
+                        <li>Image galleries</li>
+                        <li>External links</li>
+                        <li>Mobile-friendly design</li>
+                    </ul>
+                    <a href="index.html" class="project-link">View Project</a>
+                </div>
+
+                <div id="project2" class="project-card">
+                    <h3>Project 2: Coming Soon</h3>
+                    <p>Future projects will be added here as they are completed throughout the semester.</p>
+                    <ul class="project-features">
+                        <li>JavaScript functionality</li>
+                        <li>Interactive elements</li>
+                        <li>Advanced CSS techniques</li>
+                        <li>Form handling</li>
+                    </ul>
+                    <span class="coming-soon">Coming Soon</span>
+                </div>
+
+                <div id="project3" class="project-card">
+                    <h3>Project 3: Coming Soon</h3>
+                    <p>Additional projects will demonstrate advanced web development skills and techniques learned in the course.</p>
+                    <ul class="project-features">
+                        <li>API integration</li>
+                        <li>Database connectivity</li>
+                        <li>User authentication</li>
+                        <li>Performance optimization</li>
+                    </ul>
+                    <span class="coming-soon">Coming Soon</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="assignments" class="assignments-section">
+            <h2>Course Assignments</h2>
+            <div class="assignment-list">
+                <div id="assignment1" class="assignment-item">
+                    <h3>Assignment 1: HTML Basics</h3>
+                    <p>Learn fundamental HTML structure, elements, and semantic markup.</p>
+                    <span class="status completed">Completed</span>
+                </div>
+                <div id="assignment2" class="assignment-item">
+                    <h3>Assignment 2: CSS Styling</h3>
+                    <p>Master CSS selectors, properties, and layout techniques.</p>
+                    <span class="status completed">Completed</span>
+                </div>
+                <div id="assignment3" class="assignment-item">
+                    <h3>Assignment 3: Responsive Design</h3>
+                    <p>Implement mobile-first responsive web design principles.</p>
+                    <span class="status in-progress">In Progress</span>
+                </div>
+                <div id="assignment4" class="assignment-item">
+                    <h3>Assignment 4: JavaScript Fundamentals</h3>
+                    <p>Introduction to JavaScript programming and DOM manipulation.</p>
+                    <span class="status pending">Pending</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="course-info">
+            <h2>Course Information</h2>
+            <div class="info-grid">
+                <div class="info-item">
+                    <h3>Instructor</h3>
+                    <p>Dr. Smith</p>
+                </div>
+                <div class="info-item">
+                    <h3>Semester</h3>
+                    <p>Fall 2024</p>
+                </div>
+                <div class="info-item">
+                    <h3>Credits</h3>
+                    <p>3</p>
+                </div>
+                <div class="info-item">
+                    <h3>Schedule</h3>
+                    <p>MWF 10:00 AM - 11:00 AM</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Vishal. All rights reserved. | <a href="index.html">Back to Home</a></p>
+    </footer>
+
+    <script src="scripts/menu.js"></script>
+</body>
+</html>

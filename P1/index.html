@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vishal's Portfolio</title>
+    <link rel="icon" type="image/png" href="images/dearborn.png" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/responsive.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Vishal's Personal Web Page</h1>
+
+      <!-- Hamburger menu button -->
+      <button class="hamburger" id="hamburger">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+
+      <!-- Two-tier navigation menu -->
+      <nav class="main-nav" id="main-nav">
+        <!-- First tier navigation -->
+        <ul class="nav-tier-1">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="cis525.html">CIS 525</a></li>
+          <li class="dropdown">
+            <a href="#about">About</a>
+            <!-- Second tier navigation -->
+            <ul class="nav-tier-2">
+              <li><a href="#about">Bio</a></li>
+              <li><a href="#classes">Classes</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#interests">Interests</a>
+            <!-- Second tier navigation -->
+            <ul class="nav-tier-2">
+              <li><a href="#sports">Sports</a></li>
+              <li><a href="#movies">Movies</a></li>
+              <li><a href="#books">Books</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      <div class="two-column-layout">
+        <div class="left-column">
+          <section id="about" class="bio-section">
+            <h2>About Me</h2>
+            <img
+              src="images/profile.jpg"
+              alt="Profile Picture"
+              class="profile-image"
+            />
+            <p>
+              Hello! I'm Vishal, a passionate computer science student at UMD.
+              I'm currently pursuing my degree in Computer Science and have a
+              strong interest in web development, software engineering, and
+              emerging technologies.
+            </p>
+            <p>
+              I enjoy solving complex problems and building innovative solutions
+              that can make a positive impact on people's lives. When I'm not
+              coding, you can find me exploring new technologies or working on
+              personal projects.
+            </p>
+          </section>
+
+          <section id="classes" class="classes-section">
+            <h2>Current Classes</h2>
+            <ul class="class-list">
+              <li>CIS 435 - Web Technology (Grading)</li>
+              <li>CIS 505 - Data Structures and Algorithms</li>
+              <li>ECE 525 - Cloud Computing</li>
+              <li>ECE 527 - Computer Networks (Grading)</li>
+              <li>CIS 528 - Web Technology</li>
+            </ul>
+            <p>
+              Check out my
+              <a href="cis525.html" class="course-link">CIS 525 course page</a>
+              to see my completed projects!
+            </p>
+          </section>
+        </div>
+
+        <div class="right-column">
+          <section id="interests" class="interests-section">
+            <h2>My Favorites</h2>
+
+            <div id="sports" class="favorite-category">
+              <h3>Sports</h3>
+              <ol>
+                <li>
+                  Cricket - I love playing and watching
+                  <a href="https://www.premierleague.com" target="_blank"
+                    >Premier League</a
+                  >
+                </li>
+                <li>Badminton</li>
+                <li>Running</li>
+              </ol>
+            </div>
+
+            <div id="movies" class="favorite-category">
+              <h3>Movies</h3>
+              <ol>
+                <li>Inception - Mind-bending masterpiece</li>
+                <li>The Dark Knight - Heath Ledger's performance</li>
+                <li>Interstellar - Amazing cinematography</li>
+              </ol>
+            </div>
+
+            <div id="books" class="favorite-category">
+              <h3>Books</h3>
+              <ol>
+                <li>
+                  <a
+                    href="https://www.google.com/books/edition/Designing_Data_Intensive_Applications/p1heDgAAQBAJ?hl=en&gbpv=0"
+                    target="_blank"
+                    >Designing Data Intensive Applications</a
+                  >
+                  <b>by Martin Kleppmann</b>
+                </li>
+                <li>
+                  <a
+                    href="https://anthology-of-data.science/resources/prince2023udl.pdf"
+                    target="_blank"
+                    >Understanding Deep Learning</a
+                  >
+                  <b>Simon J.D. Prince</b>
+                </li>
+                <li>
+                  <a
+                    href="https://anthology-of-data.science/resources/prince2023udl.pdf"
+                    target="_blank"
+                    >System Design Interview</a
+                  >
+                  <b>by Alex Xu</b>
+                </li>
+              </ol>
+            </div>
+          </section>
+
+          <section id="gallery" class="gallery-section">
+            <h2>Gallery</h2>
+            <div class="image-gallery">
+              <img
+                src="images/hobby1.jpg"
+                alt="Coding Setup"
+                class="gallery-image"
+              />
+              <img
+                src="images/hobby2.jpg"
+                alt="Sports Activity"
+                class="gallery-image"
+              />
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        &copy; 2025 Vishal. All rights reserved. | Contact: vishalms@umich.edu
+      </p>
+    </footer>
+
+    <script src="scripts/menu.js"></script>
+  </body>
+</html>
