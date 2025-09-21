@@ -272,7 +272,7 @@
 }
 
 /* High contrast mode */
-@media (prefers-contrast: high) {
+@media (prefers-contrast: more) {
   .left-column,
   .right-column {
     border: 2px solid #000;
