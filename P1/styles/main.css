@@ -251,14 +251,14 @@ a:hover {
 /* Image gallery */
 .image-gallery {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 1rem;
 }
 
 .gallery-image {
-  width: 100%;
+  width: 50%;
   height: 200px;
-  object-fit: cover;
+  object-fit: center;
   border-radius: 10px;
   border: 2px solid #e0e0e0;
   transition: transform 0.3s ease;
@@ -374,19 +374,10 @@ footer a {
   font-weight: bold;
 }
 
+.status.in-progress,
 .status.completed {
-  background: #4ecdc4;
-  color: white;
-}
-
-.status.in-progress {
   background: #ffd93d;
-  color: #333;
-}
-
-.status.pending {
-  background: #ff6b6b;
-  color: white;
+  color: #00274c;
 }
 
 /* Info grid */
