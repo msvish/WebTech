@@ -327,15 +327,15 @@ footer a {
 
 .project-features li {
   padding: 0.5rem 0;
-  border-left: 3px solid #00274c;
+  border-left: 3px solid #f0c413;
   padding-left: 1rem;
   margin-bottom: 0.5rem;
   background: #f8f9ff;
 }
 
 .project-link {
-  background: linear-gradient(45deg, #00274c, #001a33);
-  color: white;
+  background: #f0c413;
+  color: #00274c;
   padding: 0.8rem 1.5rem;
   border-radius: 25px;
   text-decoration: none;
@@ -349,19 +349,19 @@ footer a {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Assignments */
-.assignment-list {
+/* contents */
+.content-list {
   display: grid;
   gap: 1rem;
   margin-top: 2rem;
 }
 
-.assignment-item {
+.content-item {
   background: white;
   padding: 1.5rem;
   border-radius: 10px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-  border-left: 5px solid #00274c;
+  border-left: 5px solid #f0c413;
   display: flex;
   justify-content: space-between;
   align-items: center;
