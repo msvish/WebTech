@@ -1,6 +1,3 @@
-/* Main CSS file for personal website */
-
-/* Reset and base styles */
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +11,6 @@ body {
   background-color: #f4f4f4;
 }
 
-/* Header styles */
 header {
   background: linear-gradient(135deg, #00274c 0%, #001a33 100%);
   color: white;
@@ -29,7 +25,6 @@ header h1 {
   margin-bottom: 1rem;
 }
 
-/* Header logo */
 .header-logo {
   height: 60px;
   max-width: 120px;
@@ -41,7 +36,6 @@ header h1 {
   transform: scale(1.05);
 }
 
-/* Navigation styles */
 .main-nav {
   text-align: center;
 }
@@ -79,7 +73,6 @@ header h1 {
   transform: translateY(-2px);
 }
 
-/* Dropdown menu */
 .dropdown > a::after {
   content: " ▼";
   font-size: 0.7rem;
@@ -137,7 +130,6 @@ header h1 {
   transform: translateX(5px);
 }
 
-/* Container and layout */
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -160,7 +152,6 @@ header h1 {
   border: 1px solid #e0e0e0;
 }
 
-/* Section styles */
 section {
   margin-bottom: 2rem;
 }
@@ -179,7 +170,6 @@ section h3 {
   font-size: 1.3rem;
 }
 
-/* Bio section */
 .bio-section {
   text-align: center;
 }
@@ -196,7 +186,6 @@ section h3 {
   background-color: #f0c413;
 }
 
-/* Lists */
 .class-list,
 .favorite-category ol {
   margin-left: 1.5rem;
@@ -219,7 +208,6 @@ section h3 {
   border-left: 3px solid #f0c413;
 }
 
-/* Links */
 a {
   color: #00274c;
   text-decoration: none;
@@ -248,7 +236,6 @@ a:hover {
   text-decoration: none;
 }
 
-/* Image gallery */
 .image-gallery {
   display: flex;
   flex-direction: row;
@@ -268,7 +255,6 @@ a:hover {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Favorite categories */
 .favorite-category {
   background: #f8f9ff;
   padding: 1rem;
@@ -277,7 +263,6 @@ a:hover {
   border: 1px solid #e0e0e0;
 }
 
-/* Footer */
 footer {
   background: #00274c;
   color: white;
@@ -293,7 +278,6 @@ footer a {
   font-size: 0.9rem;
 }
 
-/* CIS 525 Course Page Styles */
 .course-intro {
   background: linear-gradient(135deg, #f8f9ff 0%, #e8f0ff 100%);
   padding: 2rem;
@@ -348,7 +332,6 @@ footer a {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* contents */
 .content-list {
   display: grid;
   gap: 1rem;
@@ -379,7 +362,6 @@ footer a {
   color: #00274c;
 }
 
-/* Info grid */
 .info-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -401,7 +383,6 @@ footer a {
   margin-bottom: 0.5rem;
 }
 
-/* Hamburger Menu */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -439,7 +420,6 @@ footer a {
   transform: rotate(-45deg) translate(0, -6px);
 }
 
-/* Mobile Styles */
 @media (max-width: 768px) {
   .hamburger {
     display: flex;
@@ -487,7 +467,6 @@ footer a {
     border-radius: 10px;
   }
 
-  /* Mobile dropdowns */
   .dropdown > a {
     cursor: pointer;
   }
